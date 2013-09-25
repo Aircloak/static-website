@@ -1,0 +1,15 @@
+#pageHeader h1 {
+	margin: 0;
+	padding-left: 30px;
+	padding-top: 118px;
+	text-align: center;
+	padding-right: 30px;
+}
+
+#pageHeader h2 {
+	margin: 0;
+	font-weight: normal;
+	padding-left: 30px;
+	text-align: center;
+	padding-right: 30px;
+}

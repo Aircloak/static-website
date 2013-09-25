@@ -1,0 +1,14 @@
+#sidebarContainer {
+	float: left;
+	display: none;
+}
+
+#contentContainer {
+	width: 822px;
+	background: url(../../images/default/middle.png) repeat-y;
+}
+
+#contentContainer #content {
+	margin: 0;
+	padding: 0 64px 0 70px;
+}

@@ -1,0 +1,29 @@
+#navcontainer #current {
+	color: #fafafa;
+	background-color: #35AE47;
+}
+
+#navcontainer a:hover {
+	color: #fafafa;
+	background-color: #35AE47;
+}
+
+.blog-entry-title {
+	color: #FF765C;
+}
+
+.blog-entry-title a:link {
+	color: #FF765C;
+}
+
+.blog-entry-title a:hover {
+	color: #994637;
+}
+
+#pageHeader h1 {
+	color: #FFFFFF;
+}
+
+#pageHeader h2 {
+	color: #FFFFFF;
+}

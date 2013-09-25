@@ -1,0 +1,49 @@
+/*<group=Single Page (Photo view)>*/
+
+.photo-background {
+	text-align: center;
+	background: url(../../images/default/bg.png) repeat;
+}
+
+.photo-navigation {
+	text-align: center;
+	width: 509px;
+	font-size: 10px;
+	margin: 14px auto 18px;
+	background: no-repeat url(../../images/default/camera4.png);
+	height: 158px;
+	padding: 45px 0 0;
+}
+
+.photo-navigation a {
+	text-align: left;
+	font-size: 10px;
+}
+
+.photo-navigation a:hover {
+}
+
+.photo-frame{
+	margin: 0px;
+	border: solid #ffffff 5px;
+}
+
+.photo-links {
+}
+
+.photo-title {
+	color: #999999;
+	font-weight: normal;
+	margin: 0px 0px 8px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.photo-caption {
+	font-size: 11px;
+	margin: 0px;
+	color: #999999;
+	text-align: center;
+}
+
+/*</group>*/

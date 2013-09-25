@@ -1,0 +1,104 @@
+/*<group=Photo Album>*/
+
+.album-title {
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 3px;
+	letter-spacing: 0;
+	color: #999999;
+	margin-left: 10px;
+	height: 27px;
+}
+
+.album-description {
+	margin-bottom: 60px;
+	color: #999999;
+	font-size: 12px;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.album-wrapper {
+	display: block;
+	width: 99%;
+	position: relative;
+}
+
+.thumbnail-wrap {
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-right: 24px;
+	margin-bottom: 62px;
+}
+
+.thumbnail-frame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	background: no-repeat;
+	padding: 8px 0 0;
+	border-top: 4px solid #b3b3b3;
+}
+
+.thumbnail-frame:hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	background: no-repeat;
+	padding: 8px 0 0;
+	border-top: 4px solid #666666;
+}
+
+.thumbnail-frame img {
+    border: none;
+	background: no-repeat;
+}
+
+.thumbnail-caption {
+	margin: 0;
+	padding: 0;
+	height: 35px;
+	display: block;
+}
+	
+/*</group>*/
+
+/*<group=Index Page (Movie Thumbnail view)>*/
+
+.movie-page-title {
+	color: #999999;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: left;
+	letter-spacing: -1.5px;
+}.movie-page-description {
+	margin-top: 5px;
+	margin-bottom: 22px;
+}.movie-thumbnail-frame {
+	float: left;
+	display: inline;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border-bottom: 5px solid #cccccc;
+}
+
+.movie-thumbnail-frame:hover {
+	float: left;
+	display: inline;
+	border-bottom: 5px solid #666666;
+}
+
+.movie-thumbnail-frame a {
+	height: 30px;
+	border-bottom: 3px solid #ffffff;
+}
+
+.movie-thumbnail-caption {
+	text-align: center;
+	color: #666666;
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+	
+/*</group>*/

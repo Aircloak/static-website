@@ -1,0 +1,48 @@
+#contentContainer {
+	background: repeat-y;
+	margin-left: 240px;
+	width: 510px;
+}
+
+#contentContainer #content {
+	padding: 0;
+	margin: 0;
+	width: 510px;
+}
+
+#sidebarContainer {
+	width: 192px;
+	float: left;
+	margin-bottom: 0;
+}
+
+#sidebarContainer #sidebar {
+	margin-bottom: 0;
+	font-size: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	width: 150px;
+}
+
+#sidebarwrapper {
+	width: 192px;
+	background: url(../../images/sidebartab/sidemiddleleft.png) repeat-y;
+}
+
+#sidebartop {
+	background: no-repeat url(../../images/sidebartab/sidetopleft.png);
+	height: 36px;
+	width: 192px;
+}
+
+#sidebarbottom {
+	background: no-repeat url(../../images/sidebartab/sidebottomleft.png);
+	height: 36px;
+	width: 192px;
+}
+
+#navcontainer {
+	padding-left: 18px;
+	margin-bottom: 24px;
+	padding-right: 0;
+}

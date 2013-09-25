@@ -1,0 +1,30 @@
+/*<group=File Sharing>*/
+
+.filesharing-item {
+	border: 1px solid #cccccc;
+	margin-bottom: 15px;
+}
+
+.filesharing-item:hover {
+	border: 1px solid #cccccc;
+	margin-bottom: 15px;
+	background: #808080;
+	color: #ffffff;
+}
+
+.filesharing-description {
+	margin-bottom: 16px;
+}
+
+.filesharing-item-title {
+	font-size: 14px;
+	background: #e6e6e6;
+	padding: 4px 8px 6px;
+}
+
+.filesharing-item-description {
+	padding: 12px 8px 8px;
+	margin-bottom: 0;
+}
+
+/*</group>*/
