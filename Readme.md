@@ -48,6 +48,7 @@ wrong:
 
 1) maybe you don't have your key uploaded onto hannibal?
 2) maybe you are not using your default key on hannibal?
+3) maybe you need a proxy to get to hannibal?
 
 1) if you don't have your key on hannibal then the way to solve this
 is to email your public key to the `servicedesk@mpi-sws.org` and request
@@ -73,6 +74,24 @@ use the correct key when logging onto hannibal as root.
 
 You should of course replace `[PATH-TO-YOUR-PRIVATE-KEY]` with
 the path to your private key that is the root key with MPI-SWS.
+
+3) Hannibal is setup so that it cannot be connected to from outside MPI. This
+is safe and good, of course :) When you are far from home (MPI) you won't be
+able to push the website directly though, which is a bloody pain. This can,
+fortunately, be solved through some additional ssh config magic. What you want
+to do is to add a proxy command. Make your ~/.ssh/config file look something
+like this:
+
+    Host hannibal.mpi-sws.org hannibal
+      User root
+      IdentityFile [PATH-TO-YOUR-PRIVATE-KEY]
+      HostName hannibal.mpi-sws.org
+      ProxyCommand ssh [YOUR-USER-NAME]@contact.mpi-sws.org nc %h %p 2> /dev/null
+
+The commands above log you in to the contact.mpi-sws.org server before, logging
+on to hannibal from there! Pretty magical.
+
+-----
 
 Now please try to log in with SSH again. If it still doesn't work, then 
 I am not sure what is the problem.
