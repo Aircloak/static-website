@@ -6,6 +6,12 @@ Later when we move to a dynamic website where customers can sign up for our
 services, or where they can log in to some sort of web interface, this
 site, and repository, is likely to cease existing in its current form.
 
+# TL;DR
+
+When everything is already set up:
+    git push website master
+
+
 # Files available on the website
 
 Only the files in the `site` folder are available on the homepage. This
