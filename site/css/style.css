@@ -1,0 +1,193 @@
+/*
+------------------------------
+piccto Design + Web | 2014
+------------------------------
+www.piccto.de
+------------------------------
+Aircloak Style CSS
+-----------------------------*/
+
+header							{
+								width: 100%;
+								position: fixed; 
+								top: 0;
+								background: #fff; 
+								z-index: 999;
+								-webkit-box-shadow: 0 8px 6px -6px #999;
+								-moz-box-shadow: 0 8px 6px -6px #999;
+								box-shadow: 0 8px 6px -6px #999;
+								border-bottom: 1px solid #aaa; 
+								}
+
+header .inside					{height: 100px;}
+
+.logo							{float: left; padding: 30px 0; position: relative; z-index: 999; background: #fff;}
+
+ul.nav_main						{float: right; padding-top: 35px;}
+
+ul.nav_main li					{float: left; padding-left: 25px;}
+
+ul.nav_main a					{font-size: 15px; text-transform: uppercase; letter-spacing: 0.13em; color: #777;}
+
+ul.nav_main a:hover				{color: #1cb7db;}
+
+.header_img 					{height: 150px; padding-top: 100px; overflow: hidden; position: relative;}
+
+#home .header_img 				{height: 300px; overflow: hidden; position: relative;}
+
+.header_img img 				{
+								position:absolute;
+								width: 100%;
+								height: auto;
+								top:60px;
+								left:0;
+								right:0;
+								bottom:0;
+								margin:auto;
+								}
+								
+
+#system .header_img img,
+#jobs .header_img img			{top: 330px;}
+
+#transparency .header_img img,
+#media .header_img img			{top: -130px;}
+								
+.bg_grey .inside,
+.bg_grey.inside, 
+.bg_white.inside,
+.bg_white .inside				{padding: 50px 20px;}
+
+.bg_grey						{background: url(img/cut_top.png) no-repeat center top;}
+
+.bg_grey .inside				{background: url(img/cut_bottom.png) no-repeat center bottom;}
+
+.bg_grey, footer				{background-color: #f1f3f5;}
+
+.bg_grey .inside p				{padding-bottom: 0;}
+
+.cut_top, .cut_bottom			{width: 100%; height: 28px; position: absolute; z-index: 900; background: url(img/cut.png) no-repeat;}
+
+.cut_top						{background-position: center top; top: 0;}
+
+.cut_bottom						{background-position: center bottom; bottom: 0;}
+
+#home #home,
+#system #system,
+#transparency #transparency,
+#team #team,
+#jobs #jobs,
+#media #media					{color: #1cb7db;}
+
+header #media					{display: none}
+
+/* Styles 
+-----------------------------*/
+
+.green							{color: #1cb7db;}
+
+.dark_grey						{color: #333;}
+
+.grey							{color: #777;}
+
+h1								{font-size: 42px; line-height: 1.2;}
+
+h1, h2, h3, h4, h5, h6			{color: #333;}
+
+h1 span, h2 span, h3 span,
+h4 span,h5 span, h6 span		{color: #777;}
+
+h4.sub							{padding-bottom: 0; font-weight: 400; color: #777;}
+
+.row_23							{width: 65.33332%; margin: 0 auto; padding: 15px 0;}
+
+.hr_30							{margin: 30px 0;}
+
+.arrow_green					{padding-right: 8px;}
+
+.table							{display: table;}
+
+.cell							{display: table-cell; vertical-align: middle;}
+
+a.button						{
+								display: inline-block; 
+								font-size: 15px;
+								padding: 12px 15px 12px 45px; 
+								color: #fff; 
+								border: 1px solid #dadada; 
+								cursor: pointer;
+								background: #999 url(img/bt_download.png) no-repeat 15px 12px;
+								}
+								
+a:hover.button,
+.form .button:hover				{background-color: #1cb7db;}
+
+.download						{padding-left: 55px; background: url(img/bt_download_grey.png) no-repeat;}
+
+a#cloak_deployments				{position: absolute; top: -100px;}
+
+img.illu_system.screen			{width: 85%; height: auto;}
+
+img.illu_system.mobile			{display: none;}
+
+.col_sponsors					{width: 20%; float: left;}
+
+.col_sponsors img				{width: 100%; height: auto;}
+
+.icon img						{padding-bottom: 10px;}
+
+.row.team						{padding-bottom: 50px;}
+
+.contact						{border-top: 0; margin-top: 0;}
+
+.nav_responsive					{display: none;}
+
+
+/* Mailchimp
+-----------------------------*/
+
+.form							{
+								width: 90%; 
+								max-width: 400px;
+								margin: 0 auto; 
+								position: relative;
+								overflow: hidden;
+								}
+
+.form .email, form .button		{
+								padding: 12px 15px; 
+								margin-bottom: 10px; 
+								font-size: 15px; 
+								border: 1px solid #dadada;
+								-webkit-appearance: none;
+								}
+
+.form .email					{
+								width: 100%; 
+								float: left;
+								color: #616970; 
+								border-right: 0;
+								}
+
+.form .button 
+								{
+								width: 100px; 
+								position: absolute;
+								top: 0;
+								right: 0; 
+								background: #999; 
+								color: #fff; 
+								border-left: 0; 
+								cursor: pointer;
+								}
+
+/* Footer 
+-----------------------------*/
+
+footer							{margin-bottom: 100px;}
+
+footer .inside					{padding: 40px 0; border-top: 1px solid #fff;}
+
+footer li						{float: left; padding-right: 20px;}
+	
+footer li, footer a				{font-size: 13px; color: #999;}
