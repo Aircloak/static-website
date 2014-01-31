@@ -1,0 +1,2 @@
+RewriteEngine On 
+ErrorDocument 404 http://www.aircloak.com/404.html
