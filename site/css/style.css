@@ -79,7 +79,9 @@ ul.nav_main a:hover				{color: #1cb7db;}
 #jobs #jobs,
 #media #media					{color: #1cb7db;}
 
-header #media					{display: none}
+/* Media off */
+header #media,					
+ul.nav_main li:last-child		{display: none;}
 
 /* Styles 
 -----------------------------*/
