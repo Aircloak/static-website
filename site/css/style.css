@@ -31,28 +31,22 @@ ul.nav_main a					{font-size: 15px; text-transform: uppercase; letter-spacing: 0
 
 ul.nav_main a:hover				{color: #1cb7db;}
 
-.header_img 					{height: 150px; padding-top: 100px; overflow: hidden; position: relative;}
+#home #home,
+#system #system,
+#transparency #transparency,
+#team #team,
+#jobs #jobs,
+#media #media					{color: #1cb7db;}
 
-#home .header_img 				{height: 300px; overflow: hidden; position: relative;}
+header #media,					
+ul.nav_main li:last-child		{display: none}
 
-.header_img img 				{
-								position:absolute;
-								width: 100%;
-								height: auto;
-								top:60px;
-								left:0;
-								right:0;
-								bottom:0;
-								margin:auto;
-								}
-								
+.header_img 					{position: relative; height: 150px; margin-top: 100px; }
 
-#system .header_img img,
-#jobs .header_img img			{top: 330px;}
+#home .header_img 				{height: 300px;}
 
-#transparency .header_img img,
-#media .header_img img			{top: -130px;}
-								
+.backstretch img				{min-width: 100%; height: auto;}
+
 .bg_grey .inside,
 .bg_grey.inside, 
 .bg_white.inside,
@@ -71,17 +65,6 @@ ul.nav_main a:hover				{color: #1cb7db;}
 .cut_top						{background-position: center top; top: 0;}
 
 .cut_bottom						{background-position: center bottom; bottom: 0;}
-
-#home #home,
-#system #system,
-#transparency #transparency,
-#team #team,
-#jobs #jobs,
-#media #media					{color: #1cb7db;}
-
-/* Media off */
-header #media,					
-ul.nav_main li:last-child		{display: none;}
 
 /* Styles 
 -----------------------------*/
@@ -110,6 +93,8 @@ h4.sub							{padding-bottom: 0; font-weight: 400; color: #777;}
 .table							{display: table;}
 
 .cell							{display: table-cell; vertical-align: middle;}
+
+a								{color: #777;}
 
 a.button						{
 								display: inline-block; 
@@ -185,8 +170,6 @@ img.illu_system.mobile			{display: none;}
 
 /* Footer 
 -----------------------------*/
-
-footer							{margin-bottom: 100px;}
 
 footer .inside					{padding: 40px 0; border-top: 1px solid #fff;}
 

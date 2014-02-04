@@ -1,6 +1,8 @@
 /* jquery custom */
 
 $(document).ready(function(){
+	
+	/* include */
 
 	$(".include").each(function(){
 	    var inc=$(this);

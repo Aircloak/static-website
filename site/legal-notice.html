@@ -15,8 +15,8 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.custom.js"></script>
+<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if lt IE 7]><p class="ie">Sorry, aber unsere Seite kann mit Ihrem Programm leider nicht korrekt dargestellt werden!</p><![endif]-->
 </head>
 
 	<body id="legal-notice">
@@ -38,7 +38,9 @@
 				</div>            </header>
             
             <section class="header_img">
-            	<img src="img/home_key.jpg">
+            	<script>
+            	    $(".header_img").backstretch("img/home_key_4.jpg");
+            	</script>
             	<div class="cut_bottom"></div>
             </section>
             
@@ -129,12 +131,4 @@
 					<ul>
 						<li class="footer_logo"><img src="css/img/ac_logo.png" title="Aircloak Logo" width="100" height="20"></li>
 						<li><a href="legal-notice.html">Legal Notice</a></li>
-						<li><a href="privacy-policy">Privacy Policy</a></li>
-					</ul>
-				</div>
-			</footer>
-			
-		</div> <!-- end pagewrap -->
-		
-    </body>
-</html>
+						<li>
