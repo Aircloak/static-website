@@ -39,7 +39,7 @@ ul.nav_main a:hover				{color: #1cb7db;}
 #media #media					{color: #1cb7db;}
 
 header #media,					
-ul.nav_main li:last-child		{display: none}
+ul.nav_main li:last-child		{xdisplay: none}
 
 .header_img 					{position: relative; height: 150px; margin-top: 100px; }
 
@@ -50,15 +50,24 @@ ul.nav_main li:last-child		{display: none}
 .bg_grey .inside,
 .bg_grey.inside, 
 .bg_white.inside,
-.bg_white .inside				{padding: 50px 20px;}
+.bg_white .inside,
+.bg_dark						{padding: 50px 20px;}
 
-.bg_grey						{background: url(img/cut_top.png) no-repeat center top;}
+.bg_grey, .bg_dark				{background: url(img/cut_top.png) no-repeat center top;}
 
 .bg_grey .inside				{background: url(img/cut_bottom.png) no-repeat center bottom;}
 
 .bg_grey, footer				{background-color: #f1f3f5;}
 
-.bg_grey .inside p				{padding-bottom: 0;}
+.bg_grey .inside p				{xpadding-bottom: 0;}
+
+.bg_dark						{background-color: #e7e8e9; xborder-bottom: 1px solid #555;}
+
+.bg_dark hr						{margin: 5px 0 15px 0; border-color: #bbb; clear: both;}
+
+.footer_box.bg_grey .inside,
+.bg_grey.cut_off,
+.bg_grey .inside.cut_off		{background-image: none;}
 
 .cut_top, .cut_bottom			{width: 100%; height: 28px; position: absolute; z-index: 900; background: url(img/cut.png) no-repeat;}
 
@@ -86,7 +95,7 @@ h4.sub							{padding-bottom: 0; font-weight: 400; color: #777;}
 
 .row_23							{width: 65.33332%; margin: 0 auto; padding: 15px 0;}
 
-.hr_30							{margin: 30px 0;}
+.hr_30							{margin: 30px 0; clear: both;}
 
 .arrow_green					{padding-right: 8px;}
 
@@ -109,7 +118,23 @@ a.button						{
 a:hover.button,
 .form .button:hover				{background-color: #1cb7db;}
 
-.download						{padding-left: 55px; background: url(img/bt_download_grey.png) no-repeat;}
+a.download, .download a 		{
+								display: inline-block;
+								height: 29px; 
+								font-size: 19px; 
+								color: #777; 
+								padding-left: 40px;
+								background: url(img/bt_download_round_grey.png) no-repeat 0 top; 
+								}
+
+a:hover.download,
+.download a:hover				{
+								color: #333; 
+								background-position: 0 bottom; 
+								text-decoration: underline !important;
+								}
+								
+.download p						{font-size: 13px; padding-left: 40px;}
 
 a#cloak_deployments				{position: absolute; top: -100px;}
 
@@ -125,18 +150,20 @@ img.illu_system.mobile			{display: none;}
 
 .row.team						{padding-bottom: 50px;}
 
-.contact						{border-top: 0; margin-top: 0;}
+.contact .phone	h5				{padding-top: 5px;}
 
 .nav_responsive					{display: none;}
+
+.icon							{clear: both;}
 
 
 /* Mailchimp
 -----------------------------*/
 
 .form							{
-								width: 90%; 
-								max-width: 400px;
-								margin: 0 auto; 
+								width: 100%; 
+								xmax-width: 400px;
+								margin: 0;
 								position: relative;
 								overflow: hidden;
 								}
@@ -150,7 +177,7 @@ img.illu_system.mobile			{display: none;}
 								}
 
 .form .email					{
-								width: 100%; 
+								width: 100%;
 								float: left;
 								color: #616970; 
 								border-right: 0;
@@ -167,12 +194,22 @@ img.illu_system.mobile			{display: none;}
 								border-left: 0; 
 								cursor: pointer;
 								}
+								
+iframe							{width: 100%; height: 265px;}
 
 /* Footer 
 -----------------------------*/
 
 footer .inside					{padding: 40px 0; border-top: 1px solid #fff;}
 
-footer li						{float: left; padding-right: 20px;}
+footer ul.index					{display: inline-block; position: absolute; left: 0;}
+
+footer ul.social				{display: inline-block; position: absolute; right: 0;}
+
+footer ul.social img			{width: 28px; height: 28px;}
+
+footer li						{float: left; padding-left: 20px;}
+
+footer li:first-child			{padding-left: 0 !important;}
 	
 footer li, footer a				{font-size: 13px; color: #999;}
