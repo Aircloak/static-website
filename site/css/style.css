@@ -156,6 +156,19 @@ img.illu_system.mobile			{display: none;}
 
 .icon							{clear: both;}
 
+.bumper							{
+								position: absolute; 
+								right: 20px; 
+								top: -90px; 
+								width: 160px;
+								padding: 70px 0 70px 0; 
+								font-size: 15px;
+								font-weight: 600;
+								line-height: 1.2;
+								text-align: center;
+								color: #fff;
+								background: url(../img/bumper.png) no-repeat center 5px;
+								}
 
 /* Mailchimp
 -----------------------------*/
