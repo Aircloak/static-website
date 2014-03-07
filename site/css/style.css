@@ -120,17 +120,16 @@ a:hover.button,
 
 a.download, .download a 		{
 								display: inline-block;
-								height: 29px; 
 								font-size: 19px; 
 								color: #777; 
 								padding-left: 40px;
-								background: url(img/bt_download_round_grey.png) no-repeat 0 top; 
+								background: url(img/bt_download_0.png) no-repeat 0 top; 
 								}
 
 a:hover.download,
 .download a:hover				{
 								color: #333; 
-								background-position: 0 bottom; 
+								background: url(img/bt_download_1.png) no-repeat 0 top; 
 								text-decoration: underline !important;
 								}
 								
