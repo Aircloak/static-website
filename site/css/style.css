@@ -156,6 +156,7 @@ img.illu_system.mobile			{display: none;}
 .icon							{clear: both;}
 
 .bumper							{
+								display: none;
 								position: absolute; 
 								right: 20px; 
 								top: -90px; 
