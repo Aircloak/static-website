@@ -27,6 +27,25 @@ $(document).ready(function(){
 		$(this).find("ul").slideUp(100);
 	});	
 	
+	/* bxslider */
+	
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+		auto: false,
+		speed: '2000',
+		randomStart: false,
+		pager: true,
+		pagerCustom: '#bx-pager',
+		captions: true,
+		adaptiveHeight: true,
+		adaptiveHeightSpeed: 700,
+		responsive: true,
+		touchEnabled: true,
+		preloadImages: true
+		});
+	});		
+	
+	
 	/* accordion */
 	
 	$(document).ready( function() {

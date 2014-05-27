@@ -16,6 +16,10 @@
 <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.custom.js"></script>
 <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet" />
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
@@ -32,7 +36,6 @@
 						<li><a href="transparency.html" id="transparency">Transparency</a></li>
 						<li><a href="team.html" id="team">Team</a></li>
 						<li><a href="jobs.html" id="jobs">Join Us</a></li>
-						<li><a href="media.html" id="media">Media</a></li>
 					</ul>
 					<a href="index.html"><img class="logo" src="css/img/ac_logo.png" width="165" height="33" alt="Aircloak Logo"></a>
 				</div>
@@ -77,7 +80,7 @@
 						</a>
 					</div>
 				</article>
-				
+				<!--
 				<article class="bg_white">
 					<div class="inside">
 						<h3><span>We are supported by:</span></h3>
@@ -86,6 +89,52 @@
 						<div class="col_sponsors"><img src="img/sponsors_bund.png" title="Bundesministerium für Wirtschaft und Technologie"></div>
 						<div class="col_sponsors"><img src="img/sponsors_exist.png" title="exist – Esistenzgründung aus der Wissenschaft"></div>
 						<div class="col_sponsors"><img src="img/sponsors_mpi.png" title="Max Planck Institute for Software Systems"></div>
+					</div>
+				</article>
+				-->
+				<article class="bg_white press">
+					<div class="inside">
+						<h3><span>Press Releases:</span></h3>
+						<ul class="bxslider">
+							<li>
+								<a class="col_14 alpha" href="http://www.forbes.com/sites/sharifsakr/2014/03/14/aircloak-privacy-technology/" target="blanc">
+									<img src="img/Forbes.png">
+									<p class="cite">Instead of asking people to trust a data collector, or a storage or analytics firm, they have to put their trust in human inquisitiveness and the basic freedom of wider society.</p>
+								</a>
+								<a class="col_14" href="downloads/businesspunk.pdf" target="blanc">
+									<img src="img/Business-Punk.png">
+									<p class="cite">Sinnvolle Gesetze muss man nicht ändern [...], aber man kann versuchen, technische Lösungen für die Einschränkungen zu finden, die aus diesen Gesetzen entstehen.</p>
+								</a>
+								<a class="col_14" href="http://www.digitalewelt.org/content/gute-pr-ist-unbezahlbar-startup-aircloak-auf-der-cebit" target="blanc">
+									<img src="img/bitkom.png">
+									<p class="cite">In einer Halle voller 'Big Data' kann ein wenig Datenschutz nicht schaden.</p>
+								</a>
+								<a class="col_14" href="http://vimeo.com/84988330" target="blanc">
+									<img src="img/SWR-Fernsehen.png">
+									<p style="padding-bottom: 0;"><strong>Aircloak on TV</strong><br>22 January 2014, SWR Television</p>
+									<p class="cite">Ein Schwerpunktthema im Max-Planck-Institut in Kaiserslautern: Die Datensicherheit der Zukunft.</p>
+								</a>
+							</li>
+							<li>
+								<a class="col_14 alpha" href="http://ibmexperts.computerwoche.de/analytics-big-data/artikel/daten-anonymisierung-auf-die-andere-art" target="blanc">
+									<img src="img/computerwoche.png">
+									<p class="cite">Das Beispiel Aircloak zeigt, dass es mit entsprechenden Sicherheits&shy;konzepten durchaus möglich ist, den Datenschutz bei Big-Data-Analysen zu wahren.</p>
+								</a>
+								<a class="col_14" href="http://www.mpg.de/8152262/Datenschutz" target="blank">
+									<img src="img/Max-Planck-Gesellschaft.png">
+									<p class="cite">Was Francis mit seinem Start-up macht, ist eine Art Expedition in die reale Welt des Internets. Und die ist ein Dschungel, in dem Hunderte von Firmen eifrig Daten über Surfer sammeln.</p>
+								</a>
+								<a class="col_14" href="https://www.privacyassociation.org/publications/startup_allows_for_collecting_big_data_without_little_data" target="blanc">
+									<img src="img/iapp.png">
+									<p class="cite">Aircloak, aims to allow for the collection of Big Data without also collecting “little data” about consumers’ lives</p>
+								</a>
+								<a class="col_14" href="http://www.getstarted.de/get-started-at-cebit-mit-aircloak/" target="blanc">
+									<img src="img/Get-Started.png">
+									<p class="cite">Mit unserer Arbeit widmen wir uns zwei der heißesten – und scheinbar widersprüchlichsten – Themen unserer Zeit: Big Data und Datenschutz. Um diese zu vereinen, haben wir statt der üblichen politischen Mauscheleien eine hieb- und stichfeste technische Lösung entwickelt.</p>
+								</a>
+								
+							</li>
+						</ul>
 					</div>
 				</article>
 				
@@ -134,18 +183,20 @@
 			
 			<footer>
 				<div class="inside">
-					<ul class="index">
-						<li><img src="css/img/ac_logo.png" title="Aircloak Logo" width="100" height="20"></li>
-						<li><a href="legal-notice.html">Legal Notice</a></li>
-						<li><a href="privacy-policy.html">Privacy Policy</a></li>
-					</ul>
-					<ul class="social">
-						<li><a href="http://vimeo.com/user24526452" target="blanc"><img src="img/vimeo.png"></img></a></li>
-						<li><a href="https://twitter.com/intent/user?original_referer=http%3A%2F%2Fpiccto.de%2Fkunden%2Faircloak%2Findex.html&profile_id=767874768&screen_name=aircloak&tw_p=embeddedtimeline&tw_w=428814459952312320"><img src="img/twitter_bird.png"></img></a></li>
-					</ul>
+					<div class="col_12 alpha" style="padding-top: 15px;">
+						<ul>
+							<li><img src="css/img/ac_logo.png" title="Aircloak Logo" width="100" height="20"></li>
+							<li><a href="legal-notice.html">Legal Notice</a></li>
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							<li><strong>We are supported by:</strong></li>
+						</ul>
+					</div>
+					<div class="col_12 sponsors">
+						<img src="img/sponsors_grey2.png">
+					</div>
 				</div>
 			</footer>
-						
+									
 		</div> <!-- end pagewrap -->
 
     </body>

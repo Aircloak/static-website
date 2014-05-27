@@ -15,7 +15,6 @@ Media CSS
 @media only screen and (max-width: 1024px) {
 
 .inside							{width: 96%;}
-
 	
 }
 /* Tablet Landscape 1024*/
@@ -74,6 +73,8 @@ img.illu_system.screen			{width: 100%; height: auto;}
 .footer_box						{text-align: center;}
 
 .footer_box hr					{margin: 15px 0 20px 0 !important;}
+
+footer .sponsors img			{margin-top: 0;}
 
 .contact .phone					{padding-bottom: 5px;}
 
