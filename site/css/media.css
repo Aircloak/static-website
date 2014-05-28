@@ -23,6 +23,8 @@ Media CSS
 
 header							{position: absolute;}
 
+.bx-wrapper						{width: 85%;}
+
 }
 
 /* Tablet Portrait 768*/
@@ -97,6 +99,10 @@ footer .sponsors img			{margin-top: 0;}
 
 #legal-notice .col_13			{margin-bottom: 30px;}
 
+.press img						{width: 40%; height: auto;}
+
+.bx-wrapper						{width: 70%;}
+
 }
 
 /* Mobile Landscape 768*/
@@ -148,5 +154,9 @@ footer ul.social				{left: 50%; margin-left: -39px; top: 80px;}
 footer ul.index li				{padding-left: 12px;}
 
 footer ul.index li a			{display: inline-block !important; font-size: 11px !important; margin-top: 6px !important;}
+
+.press img						{width: 74%; height: auto;}
+
+.bx-wrapper						{width: 100%;}
 
 }

@@ -183,12 +183,12 @@ img.illu_system.mobile			{display: none;}
 								color: #fff;
 								background: url(../img/bumper.png) no-repeat center 5px;
 								}
-								
-.press img						{width: 74%; height: auto; padding-left: 13%;}
+																
+.press img						{width: 74%; height: auto;}
 
-.press p						{font-size: 13px; text-align: center;}
+.press p						{}
 
-.press a.col_14					{display: inline-block;}
+.press a.col_14					{display: inline-block; font-size: 13px; text-align: center;}
 
 .bx-wrapper						{margin-bottom: 0;}
 
