@@ -9,7 +9,7 @@ site, and repository, is likely to cease existing in its current form.
 # TL;DR
 
 When everything is already set up:
-    git push website master
+    git push website develop
 
 
 # Files available on the website
@@ -30,9 +30,9 @@ like git), you are going to think it is awesome.
 ## Short version
 
 We use git to deploy our website. Add
-`root@hannibal.mpi-sws.org:/git/www.aircloak.com` as a remote to your 
+`root@hannibal.mpi-sws.org:/git/www.aircloak.com` as a remote to your
 git repo and push to it to make changes appear on the website.
-Only changes in the master branch will be available on the site.
+Only changes in the develop branch will be available on the site.
 
 ## Long version
 
@@ -50,7 +50,7 @@ Try:
     ssh root@hannibal.mpi-sws.org
 
 If that does not work, then check one of the following things might be
-wrong: 
+wrong:
 
 1) maybe you don't have your key uploaded onto hannibal?
 2) maybe you are not using your default key on hannibal?
@@ -99,7 +99,7 @@ on to hannibal from there! Pretty magical.
 
 -----
 
-Now please try to log in with SSH again. If it still doesn't work, then 
+Now please try to log in with SSH again. If it still doesn't work, then
 I am not sure what is the problem.
 
 ### Adding the remote
@@ -120,7 +120,7 @@ Now, whenever you have made changes to the website (we assume you follow
 the normal git practises we have established at aircloak with branches
 and pull requests), you can push the changes to the webserver using:
 
-    git push website master
+    git push website develop
 
 **website** should be replaced with whatever you named the remote target.
 
