@@ -1,0 +1,26 @@
+#!/bin/bash
+# /etc/init.d/static_website
+### BEGIN INIT INFO
+# Provides: static_website
+# Required-Start: $docker
+# Required-Stop: $docker
+# Should-Start: $nginx
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Starts the docker container for the static www. website
+### END INIT INFO
+
+case "$1" in
+  start)
+    AIR_ENV=prod /aircloak/static-website/container.sh start
+    ;;
+  stop)
+    AIR_ENV=prod /aircloak/static-website/container.sh stop
+    ;;
+  *)
+    echo "Usage: /etc/init.d/blah {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
