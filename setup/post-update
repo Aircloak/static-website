@@ -1,0 +1,25 @@
+#!/bin/sh
+
+unset GIT_DIR
+
+echo
+echo "---> Fetching updates"
+echo
+
+cd /aircloak/static-website
+git checkout develop
+git pull -f
+echo "     Done."
+
+echo "---> Building website"
+BUILD_ENV=production ./build.sh
+
+echo "     Build complete."
+
+echo "---> Restarting docker container"
+/etc/init.d/static_website stop
+/etc/init.d/static_website start
+
+echo "     Update complete."
+
+exec git update-server-info
