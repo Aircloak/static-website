@@ -1,6 +1,15 @@
 FROM debian:jessie
 MAINTAINER Sebastian Probst Eide <sebastian@aircloak.com>
 
+## ------------------------------------------------------------------
+## Setup nginx
+## ------------------------------------------------------------------
+
+RUN mkdir -p /aircloak/tmp
+ADD docker/setup-env.sh /aircloak/tmp/
+RUN /aircloak/tmp/setup-env.sh
+RUN rm -rf /aircloak/tmp
+
 RUN apt-get update
 RUN apt-get install nginx-light sudo -y
 
