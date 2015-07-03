@@ -16,4 +16,4 @@ for file in $(find ./ -type f); do
 done
 
 log "Starting nginx"
-nginx
+exec nginx

@@ -33,7 +33,7 @@ EXPOSE 10000
 ENV site_path /aircloak/website
 RUN mkdir -p $site_path
 COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY docker/run.sh $site_path/
+COPY docker/run.sh /aircloak/
 COPY site $site_path/
 RUN chown -R www-data:www-data /aircloak
 RUN chmod -R 750 /aircloak
@@ -44,4 +44,3 @@ RUN chmod -R 750 /aircloak
 ## ------------------------------------------------------------------
 
 WORKDIR $site_path
-CMD $site_path/run.sh
