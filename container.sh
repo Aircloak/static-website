@@ -95,4 +95,6 @@ STOP_TIMEOUT=30
 
 container_ctl static_website \
   "$@" -p 10000:10000 \
-  aircloak/static_website:latest
+  aircloak/static_website:latest \
+  /aircloak/run.sh
+

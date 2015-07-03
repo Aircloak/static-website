@@ -11,7 +11,7 @@ you will need to add the git repository as a remote.
 This can be done with:
 
 ```bash
-git add remote website <HOST>:/git/static-website.git
+git remote add website <HOST>:/git/static-website.git
 ```
 
 where `<HOST>` is `acdocker1` or `root@acdocker1.mpi-sws.org`, depending on
