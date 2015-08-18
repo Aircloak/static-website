@@ -2,68 +2,37 @@
 
 $(document).ready(function(){
 	
-	/* include */
-
-	$(".include").each(function(){
-	    var inc=$(this);
-	    $.get(inc.attr("title"), function(data){
-	        inc.replaceWith(data);
-	    });
+	$(".nav_responsive").click(function(){
+		$("nav > ul").slideToggle("600");
+		$(".nav_responsive").toggleClass("close_menu");
 	});
 	
-	//<div class="include" title="title.html"></div>
+	// Scrolling Anker-Link 
+	// Reminder for Dummies: Link <a href="#services">Jump to services</a> / Anker <div id="services"></div>
+	$('a[href^="#"]').on('click', function(e) {
+		e.preventDefault();
 
-	// open or close box 
-	$(".nav_responsive").click(function(){ // trigger
-	      $("ul.nav_main").slideToggle("600"); // show hidden text
-	      $(".nav_responsive").toggleClass("open closed"); // changing class
-	});
-	
-	/* Navi Main Drop-Down-Menu*/
-	
-	$(".nav_main li:has(ul)").hover(function(){
-		$(this).find("ul").slideDown(100);
-	}, function(){
-		$(this).find("ul").slideUp(100);
-	});	
-	
-	/* bxslider */
-	
-	$(document).ready(function(){
-		$('.bxslider').bxSlider({
-		auto: false,
-		speed: '2000',
-		randomStart: false,
-		pager: true,
-		pagerCustom: '#bx-pager',
-		captions: true,
-		adaptiveHeight: true,
-		adaptiveHeightSpeed: 700,
-		responsive: true,
-		touchEnabled: true,
-		preloadImages: true
-		});
-	});		
-	
-	
-	/* accordion */
-	
-	$(document).ready( function() {
-		$('.trigger').not('.trigger_active').next('.toggle_container').hide();
-		$('.trigger').click( function() {
-			var trig = $(this);
-			if ( trig.hasClass('trigger_active') ) {
-				trig.next('.toggle_container').slideToggle('slow');
-				trig.removeClass('trigger_active');
-			} else {
-				$('.trigger_active').next('.toggle_container').slideToggle('slow');
-				$('.trigger_active').removeClass('trigger_active');
-				trig.next('.toggle_container').slideToggle('slow');
-				trig.addClass('trigger_active');
-			};
-			return false;
+		var target = this.hash,
+			$target = $(target);
+
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 400, 'swing', function() {
+			window.location.hash = target;
 		});
 	});
+	
+	$('.middle').vAlign();
 		
-	
 });
+
+// vertical-align: middle
+
+$.fn.vAlign = function() {
+	return this.each(function(i){
+	var ah = $(this).height();
+	var ph = $(this).parent().height();
+	var mh = Math.ceil((ph-ah) / 2);
+	$(this).css('margin-top', mh);
+	});
+};		

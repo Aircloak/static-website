@@ -1,256 +1,510 @@
-/*
-------------------------------
-piccto Design + Web | 2014
-------------------------------
-www.piccto.de
-------------------------------
-Aircloak Style CSS
------------------------------*/
-
-header							{
-								width: 100%;
-								position: fixed; 
-								top: 0;
-								background: #fff; 
-								z-index: 999;
-								-webkit-box-shadow: 0 8px 6px -6px #999;
-								-moz-box-shadow: 0 8px 6px -6px #999;
-								box-shadow: 0 8px 6px -6px #999;
-								border-bottom: 1px solid #aaa; 
-								}
-
-header .inside					{height: 100px;}
-
-.logo							{float: left; padding: 30px 0; position: relative; z-index: 999; background: #fff;}
-
-ul.nav_main						{float: right; padding-top: 35px;}
-
-ul.nav_main li					{float: left; padding-left: 30px;}
-
-ul.nav_main a					{font-size: 15px; text-transform: uppercase; letter-spacing: 0.13em; color: #777;}
-
-ul.nav_main a:hover				{color: #1cb7db;}
-
-#home #home,
-#system #system,
-#transparency #transparency,
-#team #team,
-#jobs #jobs,
-#media #media					{color: #1cb7db;}
-
-header #media,					
-ul.nav_main li:last-child		{xdisplay: none}
-
-.header_img 					{position: relative; height: 150px; margin-top: 100px; }
-
-#home .header_img 				{height: 300px;}
-
-.backstretch img				{min-width: 100%; height: auto;}
-
-.bg_grey .inside,
-.bg_grey.inside, 
-.bg_white.inside,
-.bg_white .inside,
-.bg_dark						{padding: 50px 20px;}
-
-.bg_grey, .bg_dark				{background: url(img/cut_top.png) no-repeat center top;}
-
-.bg_grey .inside				{background: url(img/cut_bottom.png) no-repeat center bottom;}
-
-.bg_grey, footer				{background-color: #f1f3f5;}
-
-.bg_grey .inside p				{xpadding-bottom: 0;}
-
-.bg_dark						{background-color: #e7e8e9; xborder-bottom: 1px solid #555;}
-
-.bg_dark hr						{margin: 5px 0 15px 0; border-color: #bbb; clear: both;}
-
-.footer_box.bg_grey .inside,
-.bg_grey.cut_off,
-.bg_grey .inside.cut_off		{background-image: none;}
-
-.cut_top, .cut_bottom			{width: 100%; height: 28px; position: absolute; z-index: 900; background: url(img/cut.png) no-repeat;}
-
-.cut_top						{background-position: center top; top: 0;}
-
-.cut_bottom						{background-position: center bottom; bottom: 0;}
-
-/* Styles 
------------------------------*/
-
-.green							{color: #1cb7db;}
-
-.dark_grey						{color: #333;}
-
-.grey							{color: #777;}
-
-h1								{font-size: 42px; line-height: 1.2;}
-
-h1, h2, h3, h4, h5, h6			{color: #333;}
-
-h1 span, h2 span, h3 span,
-h4 span,h5 span, h6 span		{color: #777;}
-
-h4.sub							{padding-bottom: 0; font-weight: 400; color: #777;}
-
-.row_23							{width: 65.33332%; margin: 0 auto; padding: 15px 0;}
-
-.hr_30							{margin: 30px 0; clear: both;}
-
-.arrow_green					{padding-right: 8px;}
-
-.table							{display: table;}
-
-.cell							{display: table-cell; vertical-align: middle;}
-
-a								{color: #777;}
-
-a.button						{
-								display: inline-block; 
-								font-size: 15px;
-								padding: 12px 15px 12px 45px; 
-								color: #fff; 
-								border: 1px solid #dadada; 
-								cursor: pointer;
-								background: #999 url(img/bt_download.png) no-repeat 15px 12px;
-								}
-								
-a:hover.button,
-.form .button:hover				{background-color: #1cb7db;}
-
-
-a.download, .download a 		{
-								display: inline-block;
-								font-size: 19px; 
-								color: #777; 
-								padding-left: 40px;
-								background: url(img/bt_download_0.png) no-repeat 0 top; 
-								}
-
-a:hover.download,
-.download a:hover				{
-								color: #333; 
-								background: url(img/bt_download_1.png) no-repeat 0 top; 
-								text-decoration: underline !important;
-								}
-								
-.download p						{font-size: 13px; padding-left: 40px;}
-
-/*.download				 		{
-								display: inline-block;
-								font-size: 19px; 
-								color: #777; 
-								padding: 10px 0 10px 40px;
-								margin: 0 auto;
-								background: url(img/bt_download_0.png) no-repeat 0 center; 
-								}
-								
-.download a						{border-bottom: 1px dotted #ccc;}
-*/
-
-
-a#cloak_deployments				{position: absolute; top: -100px;}
-
-img.illu_system.screen			{width: 85%; height: auto;}
-
-img.illu_system.mobile			{display: none;}
-
-.col_sponsors					{width: 20%; float: left;}
-
-.col_sponsors img				{width: 100%; height: auto;}
-
-.icon img						{padding-bottom: 10px;}
-
-.row.team						{padding-bottom: 50px;}
-
-.contact .phone	h5				{padding-top: 5px;}
-
-.nav_responsive					{display: none;}
-
-.icon							{clear: both;}
-
-.bumper							{
-								display: none;
-								position: absolute; 
-								right: 20px; 
-								top: -90px; 
-								width: 160px;
-								padding: 70px 0 70px 0; 
-								font-size: 15px;
-								font-weight: 600;
-								line-height: 1.2;
-								text-align: center;
-								color: #fff;
-								background: url(../img/bumper.png) no-repeat center 5px;
-								}
-																
-.press img						{width: 74%; height: auto;}
-
-.press p						{}
-
-.press a.col_14					{display: inline-block; font-size: 13px; text-align: center;}
-
-.bx-wrapper						{margin-bottom: 0;}
-
-p.cite							{font-size: 13px; font-style: normal; line-height: 1.4;}
-p.cite:before					{content:'«'; font-size: 15px; padding-right: 2px;}
-p.cite:after					{content:'»'; font-size: 15px; padding-left: 2px;}
-
-/* Mailchimp
------------------------------*/
-
-.form							{
-								width: 100%; 
-								xmax-width: 400px;
-								margin: 0;
-								position: relative;
-								overflow: hidden;
-								}
-
-.form .email, form .button		{
-								padding: 12px 15px; 
-								margin-bottom: 10px; 
-								font-size: 15px; 
-								border: 1px solid #dadada;
-								-webkit-appearance: none;
-								}
-
-.form .email					{
-								width: 100%;
-								float: left;
-								color: #616970; 
-								border-right: 0;
-								}
-
-.form .button 
-								{
-								width: 100px; 
-								position: absolute;
-								top: 0;
-								right: 0; 
-								background: #999; 
-								color: #fff; 
-								border-left: 0; 
-								cursor: pointer;
-								}
-								
-iframe							{width: 100%; height: 265px;}
-
-/* Footer 
------------------------------*/
-
-footer .inside					{padding: 40px 0; border-top: 1px solid #fff;}
-
-footer ul.index					{display: inline-block; position: absolute; left: 0;}
-
-footer ul.social				{display: inline-block; position: absolute; right: 0;}
-
-footer ul.social img			{width: 28px; height: 28px;}
-
-footer li						{float: left; padding-left: 20px;}
-
-footer li:first-child			{padding-left: 0 !important;}
+/* www.piccto.de 2015 | style.css */
+
+body {
+	background-color: #a1a3a5;
+}
+
+#pagewrap {
+	max-width: 2000px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background: #fff;
+	-webkit-box-shadow: 0 8px 6px -6px #999;
+	-moz-box-shadow: 0 8px 6px -6px #999;
+	box-shadow: 0 8px 6px -6px #999;
+	border-bottom: 1px solid #aaa;
+}
+
+header .container {
+	position: relative;
+}
+
+a.logo {
+	float: left;
+	padding: 30px 0;
+	height: 33px;
+	width: 165px;
+}
+
+/* ----- Navi ----- */
+
+nav ul {
+	display: none;
+	width: 100%;
+}
+
+nav a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	padding: 0 20px;
+	font-size: 15px;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 0.13em;
+	line-height: 100px;
+	color: #777;
+	white-space: nowrap;
+}
+
+nav a:hover {
+	color: #1cb7db;
+}
+
+@media (min-width: 960px) {
+
+	nav > ul {
+		display: block !important;
+	}
 	
-footer li, footer a				{font-size: 13px; color: #999;}
+	nav > ul > li {
+		float: left;
+		border: 0;
+	}
+}
 
-footer .sponsors img			{width: 100%; height: auto; margin-top: -20px;}
+@media (max-width: 960px) {
+
+	.nav_responsive {
+		display: block;
+		padding: 45px 30px;
+		background: url(img/bt_nav_green.png) no-repeat right center;
+	}
+	
+	.nav_responsive.close_menu {
+			background: url(img/bt_nav_green1.png) no-repeat right center;
+		}
+
+	nav > ul > li > a {
+		padding: 0;
+		line-height: 3.0;
+		border-top: 1px dotted #ccc;
+	}
+}
+
+#home #home, 
+#system #system, 
+#transparency #transparency, 
+#team #team, 
+#use-cases #use-cases {
+	color: #1cb7db;
+}
+
+/* ----- Styles ----- */
+ 
+.green {
+	color: #1cb7db;
+}
+
+.grass_green {
+	color: #78B624;
+}
+
+.blue_green {
+	color: #04B3D4;
+}
+
+.dark_grey {
+	color: #228A95;
+}
+
+.grey {
+	color: #666;
+}
+
+.dark-grey {
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+	color: #777;
+}
+
+h4, h4.sub {
+	font-size: 18px;
+}
+
+h5.sub {
+	font-size: 16px;
+	color: #333;
+}
+
+h4.sub {
+	font-weight: 400;
+	color: #666;
+	line-height: 1.6;
+}
+
+.small {
+	font-size: 13px;
+}
+
+a {
+	color: #666;
+}
+
+a:hover {
+	color: #333;
+}
+
+.bullet-list li {
+	padding-left: 13px;
+	margin-bottom: 10px;
+}
+
+.bullet-list li:before {
+	content: '•';
+	color: #1cb7db;
+	padding-right: 7px;
+	margin-left: -13px;
+}
+
+#data-engine .bullet-list li {
+	margin-bottom: 5px;
+}
+
+/* ----- Blocks ----- */
+
+.header_img {
+	position: relative;
+	height: 150px;
+	margin-top: 100px;
+}
+
+#home .header_img,
+#team .header_img {
+	height: 300px;
+}
+
+@media only screen and (min-width: 1300px) {
+	#team .backstretch img {
+		margin-top: 85px !important;
+	}
+}
+
+.bg-white .container, 
+.bg-grey .container {
+	padding: 40px 0;
+}
+
+.bg-grey {
+	background: #f1f3f5 url(img/cut_top.png) no-repeat center top;
+}
+
+.bg-grey .container {
+	background: url(img/cut_bottom.png) no-repeat center bottom;
+}
+
+#contact .bg-grey .container, 
+footer.bg-grey, 
+footer.bg-grey .container {
+	background-image: none;
+}
+
+.cut_bottom	{
+	width: 100%; 
+	height: 28px; 
+	position: absolute; 
+	bottom: 0;
+	z-index: 900; 
+	background: url(img/cut.png) no-repeat center bottom;
+}
+
+a.button_full {
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 10px 15px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+a:hover.button_full {
+	color: white;
+	background: #333;
+}
+
+.round {
+	width: 280px;
+	height: 280px;
+	border-radius: 140px;
+	background: #f2f3f5;
+	border: 1px solid #ccc;
+}
+
+img.illu-data-engine.screen {
+	width: 85%; 
+}
+
+img.illu-data-engine.mobile {
+	display: none;
+}
+
+.download .container, .sponsors .container {
+	border-top: 1px dotted #ccc;
+}
+
+a.download, .download a {
+	display: inline-block;
+	font-size: 19px;
+	color: #777;
+	padding-left: 40px;
+	background: url(img/bt_download_0.png) no-repeat 0 top;
+	background-size: 28px;
+}
+
+a:hover.download, .download a:hover {
+	color: #333;
+	background: url(img/bt_download_1.png) no-repeat 0 top;
+	background-size: 28px;
+	text-decoration: underline !important;
+}
+
+.download p {
+	font-size: 13px;
+	padding-left: 40px;
+}
+
+.team-members h5 {
+	margin: 10px 0 0 0;
+}
+
+footer .container {
+	border-top: 1px solid #fff;
+}
+
+footer li {
+	float: left;
+	padding-left: 20px;
+}
+
+footer li:first-child {
+	padding-left: 0 !important;
+}
+
+footer li, footer a {
+	font-size: 13px;
+	color: #999;
+}
+
+footer .sponsors img {
+	width: 100%;
+	height: auto;
+	margin-top: -20px;
+}
+
+.badge {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 40px;
+	width: 280px;
+}
+
+.badge:hover {
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+	
+}
+
+/* bxslider */
+
+.bx-wrapper	{
+	margin-bottom: 0;
+}
+
+.bxslider li {
+	padding: 0 15px;
+	text-align: center;
+}
+
+.bxslider p {
+	font-size: 13px;
+	margin-bottom: 0;
+}
+
+.bxslider img {
+	max-width: 80%;
+}
+
+.bxslider p.cite {
+	font-style: normal; 
+	line-height: 1.4;
+}
+
+.bxslider p.cite:before {
+	content:'«'; 
+	font-size: 15px; 
+	padding-right: 2px;
+}
+
+.bxslider p.cite:after {
+	content:'»'; 
+	font-size: 15px; 
+	padding-left: 2px;
+}
+ 
+/* Mailchimp */
+
+.form {
+	width: 100%;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.form .email, form .button {
+	padding: 12px 15px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	border: 1px solid #dadada;
+	-webkit-appearance: none;
+}
+
+.form .email {
+	width: 100%;
+	float: left;
+	color: #616970;
+	border-right: 0;
+}
+
+.form .button {
+	width: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #1cb7db;
+	color: #fff;
+	border-left: 0;
+	cursor: pointer;
+}
+
+.form .button:hover {
+	background: #333;
+}
+
+/* twitter */
+
+iframe#twitter-widget-0 {
+	width: 100%;
+	height: 274px;
+}
+
+/* ----- Responsive Styles ----- */
+
+@media only screen and (min-width: 960px) {
+	
+	.transp .col-33 {
+		height: 300px;
+		padding-top: 25px;
+	}
+	
+	.round-2 {
+		width: 300px;
+		padding-top: 0 !important;
+		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		background: #f1f3f5;
+	}
+	
+	.anker {
+	padding-top: 100px;
+	margin-top: -100px;
+	}
+
+}
+ 
+@media only screen and (max-width: 960px) {
+
+	body {
+		text-align: center;
+	}
+	
+	header {
+		position: absolute;
+	}
+	
+	.bg-white .container, 
+	.bg-grey .container {
+		padding: 20px 0;
+	}
+	
+	.bx-controls-direction {
+		display: none;
+	}
+	
+	.middle {
+		margin-top: 0 !important;
+	}
+	
+	.push-right {
+		float: none !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.badge {
+	right: 0;
+	left: 0;
+	}
+
+	h1, h2, h3 {
+		font-size: 24px; 
+		line-height: 1.3; 
+		margin-bottom: 10px;
+	}
+	
+	h4.sub {
+		font-size: 15px; 
+	}
+	
+	#home .header_img,
+	#team .header_img,
+	#home .header_img .container,
+	#team .header_img .container {
+		height: 150px;
+	}
+	
+	img.illu-data-engine.screen {
+		display: none
+	}
+	
+	img.illu-data-engine.mobile	{
+		display: block; 
+		width: 100%; 
+		height: auto;
+	}
+	
+	footer li {
+		display: block;
+		float: none;
+		padding-bottom: 10px;
+	}
+
+@media print {
+	body, .container {
+		width: 100%;
+	}
+}
