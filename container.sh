@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eo pipefail
-
 function named_container_running {
   if [ -z "$(docker ps --filter=name=$1 | grep -v CONTAINER)" ]; then
     return 1
