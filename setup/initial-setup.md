@@ -1,11 +1,11 @@
 # Setting up build environment
 
-The following examples assume the container building and deployment happens on `acdocker1`.
+The following examples assume the container building and deployment happens on `acdocker2`.
 
 
 ## Local setup
 
-Assuming the build server (where the git repository is hosted) is at `acdocker1`,
+Assuming the build server (where the git repository is hosted) is at `acdocker2`,
 you will need to add the git repository as a remote.
 
 This can be done with:
@@ -14,14 +14,14 @@ This can be done with:
 git remote add website <HOST>:/git/static-website.git
 ```
 
-where `<HOST>` is `acdocker1` or `root@acdocker1.mpi-sws.org`, depending on
+where `<HOST>` is `acdocker2` or `root@acdocker2.mpi-sws.org`, depending on
 how you have configured you local ssh.
 
 
 ## Remote setup
 
 In this initial setup, it is expected that both the build and hosting server
-are the same, i.e. `acdocker1`.
+are the same, i.e. `acdocker2`.
 
 On the host itself, create the repository that hosts the code, and receives git pushes,
 as well as a local clone of it:
