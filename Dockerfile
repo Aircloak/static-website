@@ -10,7 +10,8 @@ ADD docker/setup-env.sh /aircloak/tmp/
 RUN /aircloak/tmp/setup-env.sh
 RUN rm -rf /aircloak/tmp
 
-RUN apt-get update
+# Change the date string below to force upgrade of packages
+RUN echo '20160218' > /dev/null && apt-get update && apt-get upgrade -y
 RUN apt-get install nginx-light sudo -y
 
 
