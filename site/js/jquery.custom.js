@@ -9,20 +9,20 @@ $(document).ready(function(){
 	
 	// Scrolling Anker-Link 
 	// Reminder for Dummies: Link <a href="#services">Jump to services</a> / Anker <div id="services"></div>
-	$('a[href^="#"]').on('click', function(e) {
-		e.preventDefault();
-
-		var target = this.hash,
-			$target = $(target);
-
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
-		}, 400, 'swing', function() {
-			window.location.hash = target;
-		});
-	});
+	// smooth scroll
 	
-	$('.middle').vAlign();
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 		
 });
 
