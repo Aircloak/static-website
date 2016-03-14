@@ -249,7 +249,7 @@ a:hover.button_full {
 }
 
 img.illu-data-engine.screen {
-	width: 85%; 
+	width: 90%; 
 }
 
 img.illu-data-engine.mobile {
@@ -466,8 +466,11 @@ iframe#twitter-widget-0 {
 @media only screen and (max-width: 480px) {
 
 	.badge {
+	/*
 	right: 0;
 	left: 0;
+	*/
+	display: none;
 	}
 
 	h1, h2, h3 {
