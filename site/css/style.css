@@ -214,6 +214,10 @@ footer.bg-grey .container {
 	background-image: none;
 }
 
+#contact h6 {
+	margin-bottom: 10px;
+}
+
 .cut_bottom	{
 	width: 100%; 
 	height: 28px; 
