@@ -125,6 +125,10 @@ nav a:hover {
 	color: #333;
 }
 
+h1 {
+	font-size: 48px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: #333;
 }
@@ -252,11 +256,17 @@ a:hover.button_full {
 	border: 1px solid #ccc;
 }
 
-img.illu-data-engine.screen {
-	width: 90%; 
+img.screen {
+	xwidth: 90%; 
+	xtext-align: center;
 }
 
-img.illu-data-engine.mobile {
+img.illu-data-engine.screen {
+	width: 90%; 
+	text-align: center;
+}
+
+img.mobile {
 	display: none;
 }
 
@@ -327,6 +337,19 @@ footer .sponsors img {
 	-webkit-transform:scale(1.1);
 	transform:scale(1.1);
 	
+}
+
+.references li {
+	float: left;
+	padding: 20px;
+}
+
+.references img {
+	xheight: 70px;
+}
+
+.references img.square {
+	xheight: 90px;
 }
 
 /* bxslider */
@@ -412,6 +435,222 @@ iframe#twitter-widget-0 {
 	height: 274px;
 }
 
+/* twitter */
+/*
+iframe#twitter-widget-0 {
+	width: 100%;
+	xheight: 274px;
+	height: 500px;
+}
+
+.twitter-wrap {
+	xmin-height: 215px;
+	display: none;
+	overflow: hidden;
+}
+
+#feed img {
+	display: none;
+	width: 35px;
+	height: auto;
+	margin-left: -40px;
+	padding-top: 0;
+}
+
+#feed li {
+	width: 100%;
+	xheight: 250px;
+	float: left;
+	xpadding: 0 20px;
+	overflow: hidden;
+	padding-top: 20px;
+	border-top: 1px dotted #ccc;
+}
+
+#feed .user {
+	font-weight: 600;
+	font-size: 12px;
+}
+
+p.timePosted, p.interact {
+	font-size: 12px;
+	float: left;
+}
+
+a.twitter_reply_icon,
+a.twitter_retweet_icon,
+a.twitter_fav_icon {
+	font-size: 0px;
+	xcolor: white;
+}
+
+a.twitter_reply_icon:before,
+a.twitter_retweet_icon:before,
+a.twitter_fav_icon:before {
+	font-size: 12px;
+	font-family: FontAwesome;
+	color: #999;
+	margin-left: 15px;
+}
+
+a.twitter_reply_icon:hover:before,
+a.twitter_retweet_icon:hover:before,
+a.twitter_fav_icon:hover:before {
+	color: #666;
+}
+
+a.twitter_reply_icon:before {
+	content: '\f122';
+}
+
+a.twitter_retweet_icon:before {
+	content: '\f079';
+}
+
+a.twitter_fav_icon:before {
+	content: '\f004';
+}
+
+
+p.tweet {
+	font-size: 24px;
+	margin: 0;
+	font-family: 'Roboto Slab', Arial, sans-serif; 
+	font-weight: 300;
+}
+
+.tweet a {
+	color: #1cb7db;
+}
+*/
+
+.twitter {
+
+}
+
+#feed {
+	padding-bottom: 40px;
+}
+
+#feed ul {
+
+}
+
+#feed li {
+	float: left;
+	width: 25%;
+	padding: 0 5px;
+}
+
+#feed li > span {
+	display: inline-block;
+	background: white;
+	/*
+	background: white url(../img/placeholder-twitter.jpg) no-repeat;
+	padding-top: 180px;
+	position: relative;
+	*/
+}
+
+#feed .inner {
+	padding: 10px;
+}
+
+#feed p.tweet {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+#feed .tweet a {
+	color: #1A90A7;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+#feed .media img {
+	/*
+	position: absolute;
+	top: 0;
+	*/
+}
+
+p.tweet img {
+
+}
+
+#feed .user {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+#feed .user img {
+	max-height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#feed .user a {
+	display: inline-block;
+}
+
+#feed .user a span {
+	display: block;
+	padding-left: 50px;
+	font-weight: 600;
+}
+
+#feed .user a span:last-child {
+	font-weight: 400;
+	font-size: 12px;
+}
+
+#feed p.timePosted {
+	float: left;
+	font-size: 12px;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+#feed p.interact {
+	float: right;
+}
+
+a.twitter_reply_icon,
+a.twitter_retweet_icon,
+a.twitter_fav_icon {
+	font-size: 0px;
+	xcolor: white;
+}
+
+a.twitter_reply_icon:before,
+a.twitter_retweet_icon:before,
+a.twitter_fav_icon:before {
+	font-size: 13px;
+	font-family: FontAwesome;
+	color: #999;
+	margin-left: 15px;
+}
+
+a.twitter_reply_icon:hover:before,
+a.twitter_retweet_icon:hover:before,
+a.twitter_fav_icon:hover:before {
+	color: #666;
+}
+
+a.twitter_reply_icon:before {
+	content: '\f122';
+}
+
+a.twitter_retweet_icon:before {
+	content: '\f079';
+}
+
+a.twitter_fav_icon:before {
+	content: '\f004';
+}
+
+
 /* ----- Responsive Styles ----- */
 
 @media only screen and (min-width: 960px) {
@@ -435,6 +674,10 @@ iframe#twitter-widget-0 {
 	.anker {
 	padding-top: 100px;
 	margin-top: -100px;
+	}
+	
+	.shortlink-top p {
+		height: 100px;
 	}
 
 }
@@ -465,6 +708,17 @@ iframe#twitter-widget-0 {
 	.push-right {
 		float: none !important;
 	}
+	
+	#feed ul {
+		margin: 0;
+	}
+	
+	#feed li {
+		float: none;
+		width: 100%;
+		padding: 10px 0;
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -494,11 +748,11 @@ iframe#twitter-widget-0 {
 		height: 150px;
 	}
 	
-	img.illu-data-engine.screen {
+	img.screen {
 		display: none
 	}
 	
-	img.illu-data-engine.mobile	{
+	img.mobile	{
 		display: block; 
 		width: 100%; 
 		height: auto;

@@ -370,6 +370,10 @@ small,
 	transform: translateY(-50%);
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 /* margin, padding, border */
 
 .mt-0 {margin-top: 0;}
