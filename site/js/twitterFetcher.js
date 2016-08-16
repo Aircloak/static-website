@@ -401,3 +401,17 @@
   window.twitterFetcher = twitterFetcher;
   return twitterFetcher;
 }));
+
+
+// Configuration
+
+var config1 = {
+  "id": '428814459952312320',
+  "domId": 'feed',
+  "maxTweets": 4,
+  "enableLinks": true,
+  "showPermalinks": true,
+  "showImages": true,
+  "showRetweet": true
+};
+twitterFetcher.fetch(config1);

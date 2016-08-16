@@ -28,11 +28,13 @@
 <script src="js/twitterFetcher.js"></script>
 <script src="js/jquery.custom.js"></script>
 
-<!--[if lt IE 9]>
+<!--[if lt IE 10]>
 <script src="ie/html5shiv.js"></script>
 <script src="ie/html5shiv-printshiv.js"></script>
 <script src="ie/respond.js"></script>
+<script src="ie/matchMedia.js"></script>
 <![endif]-->
+
 </head>
 
 	<body id="home">
@@ -41,7 +43,7 @@
 
 			<header>
 				<div class="container">
-					<a class="logo" href="/"><img src="css/img/ac_logo.png" alt="Aircloak Logo" width="165" height="33" alt="Aircloak Logo"></a>
+					<a class="logo" href="/"><img src="css/img/ac-logo-top.png" alt="Aircloak Logo" width="165" height="33" alt="Aircloak Logo"></a>
 					<a class="nav_responsive"></a>
 					<nav class="push-right">
 						<ul>
@@ -106,10 +108,16 @@
 			<!-- References -->
 			<article class="bg-white references">
 				<div class="container">
-					<h4>Our References:</h4>
-					<div class="text-center">
-						<img class="screen" src="img/refs.jpg">
-						<img class="mobile" src="img/refs-small.jpg">
+					<div class="row">
+						<div class="ref-slider text-center">
+							<div class="item"><img src="img/ref/cisco.png" alt="Cisco Systems, Inc"></div>
+							<div class="item"><img src="img/ref/columbia.png" alt="Columbia University"></div>
+							<div class="item"><img src="img/ref/colorado.png" alt="Colorado State"></div>
+							<div class="item"><img src="img/ref/data-transparency.png" alt="Data Transparency Lab"></div>
+							<div class="item"><img src="img/ref/telefonica.png" alt="Telefonica"></div>
+							<div class="item"><img src="img/ref/onelife.png" alt="Onelife Health"></div>
+							<div class="item"><img src="img/ref/max-planck.png" alt="Max-Planck-Gesellschaft"></div>
+						</div>
 					</div>
 				</div>
 			</article>
@@ -117,9 +125,8 @@
 			<!-- Twitter -->
 			<article class="bg-grey twitter">
 				<div class="container">
-					<h4>Folluw Us On Twitter: <a href="https://twitter.com/aircloak?ref_src=twsrc%5Etfw" target="blank">@aircloak</a></h4>
-					<div id="feed">
-					</div>
+					<h4>Follow Us On Twitter: <a href="https://twitter.com/aircloak?ref_src=twsrc%5Etfw" target="blank">@aircloak</a></h4>
+					<div id="feed"></div>
 				</div>
 			</article>
 
@@ -132,7 +139,6 @@
 								<h2>Anonymising Filter</h2>
 								<p>Aircloak's first-in-class solution is installed between the existing "primary-use" database and untrusted "secondary use" analysts and applications. It filters queries and answers to ensure user anonymity while providing high-fidelity aggregate answers.</p>
 							</div>
-							<hr>
 							<div class="col-100">
 								<img class="illu-data-engine screen" src="img/illu_system_2016.png" alt="Cloaked Analytics Data Engine">
 								<img class="illu-data-engine mobile" src="img/illu_system_2016_small.png" alt="Cloaked Analytics Data Engine">
@@ -194,71 +200,48 @@
 			</section>
 
 			<!-- News-Slider -->
-			<article class="bg-white">
+			<article class="bg-white news">
 				<div class="container">
 					<div class="row">
-						<script>
-							$(document).ready(function(){
-								$('.bxslider').bxSlider({
-								auto: false,
-								speed: '2000',
-								randomStart: false,
-								pager: true,
-								pagerCustom: '#bx-pager',
-								captions: true,
-								adaptiveHeight: true,
-								adaptiveHeightSpeed: 700,
-								responsive: true,
-								touchEnabled: false,
-								preloadImages: true
-								});
-							});
-						</script>
-						<ul class="bxslider">
-							<li>
-								<a class="col-25" href="http://newsroom.cisco.com/press-release-content?type=webcontent&articleId=1499975" target="blanc">
-									<img src="img/cisco-2.png" alt="cisco">
+						<div class="news-slider text-center small">
+								<a href="http://newsroom.cisco.com/press-release-content?type=webcontent&articleId=1499975" target="blanc">
+									<img src="img/cisco.png" alt="cisco">
 									<p class="cite">Aircloak [...] is developing a technology and service that provides highly accurate aggregate analytics over use data while strongly protecting user privacy.</p>
 								</a>
-								<a class="col-25" href="http://www.forbes.com/sites/sharifsakr/2014/03/14/aircloak-privacy-technology/" target="blanc">
+								<a href="http://www.forbes.com/sites/sharifsakr/2014/03/14/aircloak-privacy-technology/" target="blanc">
 									<img src="img/Forbes.png" alt="Forbes Magazin">
 									<p class="cite">It’s one of the toughest problems facing any information-driven business today: How do you collect “big data” about anonymous groups of users or customers, while at the same time guaranteeing that you’re not also gathering “little data” about their private lives?</p>
 								</a>
-								<a class="col-25" href="downloads/businesspunk.pdf" target="blanc">
+								<a href="downloads/businesspunk.pdf" target="blanc">
 									<img src="img/Business-Punk.png" alt="Business Punk">
 									<p class="cite">Sinnvolle Gesetze muss man nicht ändern [...], aber man kann versuchen, technische Lösungen für die Einschränkungen zu finden, die aus diesen Gesetzen entstehen.</p>
 								</a>
-								<a class="col-25" href="http://vimeo.com/84988330" target="blanc">
+								<a href="http://vimeo.com/84988330" target="blanc">
 									<img src="img/SWR-Fernsehen.png" alt="SWR">
 									<p><strong>Aircloak on TV</strong><br>22 January 2014, SWR Television</p>
 									<p class="cite">Ein Schwerpunktthema im Max-Planck-Institut in Kaiserslautern: Die Datensicherheit der Zukunft.</p>
 								</a>
-							</li>
-							<li>
-								<a class="col-25" href="http://ibmexperts.computerwoche.de/analytics-big-data/artikel/daten-anonymisierung-auf-die-andere-art" target="blanc">
+								<a href="http://ibmexperts.computerwoche.de/analytics-big-data/artikel/daten-anonymisierung-auf-die-andere-art" target="blanc">
 									<img src="img/computerwoche.png" alt="Computerwoche">
 									<p class="cite">Das Beispiel Aircloak zeigt, dass es mit entsprechenden Sicherheits&shy;konzepten durchaus möglich ist, den Datenschutz bei Big-Data-Analysen zu wahren.</p>
 								</a>
-								<a class="col-25" href="http://www.mpg.de/8152262/Datenschutz" target="blank">
+								<a href="http://www.mpg.de/8152262/Datenschutz" target="blank">
 									<img src="img/Max-Planck-Gesellschaft.png" alt="Max-Planck-Gesellschaft">
 									<p class="cite">Was Francis mit seinem Start-up macht, ist eine Art Expedition in die reale Welt des Internets. Und die ist ein Dschungel, in dem Hunderte von Firmen eifrig Daten über Surfer sammeln.</p>
 								</a>
-								<a class="col-25" href="https://www.privacyassociation.org/publications/startup_allows_for_collecting_big_data_without_little_data" target="blanc">
+								<a href="https://www.privacyassociation.org/publications/startup_allows_for_collecting_big_data_without_little_data" target="blanc">
 									<img src="img/iapp.png" alt="iapp">
 									<p class="cite">Aircloak, aims to allow for the collection of Big Data without also collecting “little data” about consumers’ lives</p>
 								</a>
-								<a class="col-25" href="http://www.getstarted.de/get-started-at-cebit-mit-aircloak/" target="blanc">
+								<a href="http://www.getstarted.de/get-started-at-cebit-mit-aircloak/" target="blanc">
 									<img src="img/Get-Started.png" alt="Get Started">
 									<p class="cite">Mit unserer Arbeit widmen wir uns zwei der heißesten – und scheinbar widersprüchlichsten – Themen unserer Zeit: Big Data und Datenschutz. Um diese zu vereinen, haben wir statt der üblichen politischen Mauscheleien eine hieb- und stichfeste technische Lösung entwickelt.</p>
 								</a>
-							</li>
-							<li>
-								<a class="col-25" href="http://www.digitalewelt.org/content/gute-pr-ist-unbezahlbar-startup-aircloak-auf-der-cebit" target="blanc">
+								<a href="http://www.digitalewelt.org/content/gute-pr-ist-unbezahlbar-startup-aircloak-auf-der-cebit" target="blanc">
 									<img src="img/bitkom.png" alt="bitkom">
 									<p class="cite">In einer Halle voller 'Big Data' kann ein wenig Datenschutz nicht schaden.</p>
 								</a>
-							</li>
-						</ul>
+						</div>
 					</div>
 				</div>
 			</article>
@@ -272,7 +255,7 @@
 							<a href="downloads/Aircloak-One-Pager.pdf" target="_blank">Aircloak One-Pager (PDF)</a><br><br>
 							<a href="downloads/5125UE_s.pdf" target="_blank">TÜVIT Trusted Process Certificate (PDF)</a><br>
 						</div>
-						<div class="col-50 text-center" style="border-left: 1px dotted #ccc">
+						<div class="col-50 text-center tuv">
 							<img src="img/tuev-2015.png" alt="" width="180px">
 							<p><em>Our processes fulfil all requirements for data collection and anonymized reporting according to <a class="underline" href="https://www.tuvit.de/en/certification-overview-1265-trusted-process-certificates-1273.htm" target="blank">TÜVIT Trusted Process (TPCS).</a></em></p>
 						</div>
@@ -285,17 +268,17 @@
 					<div class="container">
 
 						<div class="row gap-80">
-							<div class="col-50 xsmall">
+							<div class="col-50">
 								<h4>Contact us at <strong><a href="mailto:solutions@aircloak.com">solutions@aircloak.com</a></strong></h4>
 								<hr>
 								<div class="row">
-									<div class="col-50 ma-0">
+									<div class="col-50">
 										<h6>Aircloak Berlin</h6>
 										<p>Gormannstr. 14
 										<br>10119 Berlin
 										<br>Germany</p>
 									</div>
-									<div class="col-50 ma-0">
+									<div class="col-50">
 										<h6>Aircloak Kaiserslautern</h6>
 										<p>Paul-Ehrlich-Str. 26
 										<br>67663 Kaiserslautern
@@ -325,7 +308,7 @@
 					<div class="row">
 						<div class="col-50">
 							<ul>
-								<li><img src="css/img/ac_logo.png" alt="Aircloak Logo" width="100" height="20"></li>
+								<li><img src="css/img/ac-logo-footer.png" alt="Aircloak Logo" width="100" height="20"></li>
 								<li><a href="legal-notice.html">Legal Notice</a></li>
 								<li><a href="privacy-policy.html">Privacy Policy</a></li>
 								<li><strong>We are supported by:</strong></li>
@@ -339,21 +322,6 @@
 			</footer>
 
 		</div> <!-- end pagewrap -->
-
-		<script>
-			/*"id": '428814459952312320'
-			
-			/**********TWITTER FEED GRABBER***********/
-			var config1 = {
-			  "id": '428814459952312320',
-			  "domId": 'feed',
-			  "maxTweets": 4,
-			  "enableLinks": true,
-			  "showPermalinks": true,
-			  "showImages": true,
-			  "showRetweet": true
-			};
-			twitterFetcher.fetch(config1);
-		</script>
+		
     </body>
 </html>

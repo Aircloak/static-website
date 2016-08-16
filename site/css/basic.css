@@ -175,7 +175,6 @@ ol:last-child {
 }
 
 [class*="col-"] {
-	float: left;
 	width: 100%;
 	min-height: 1px;
     margin: 20px 0;
@@ -190,6 +189,7 @@ ol:last-child {
 	}
 	
 	[class*="col-"] {
+		float: left;
 		padding: 0 20px;
 	}
 			
