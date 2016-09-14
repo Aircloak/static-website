@@ -18,9 +18,9 @@ Anything added outside of it, can not be served by the web-server.
 
 # Deploying
 
-The website is deployed using docker, and git post-commit hooks.
-If everything is [setup](setup/initial-setup.md) correctly, you can push changes with the command `git push website develop`.
+The website is deployed as a static website behind nginx.
+To deploy a new version you run either `./deploy.sh stage` or `./deploy.sh prod`,
+depending on which version of the website you want to update.
 
-You can also test the site locally by running `./build.sh; ./container.sh start` from the root folder.
-If successful, the website is available under `http://localhost:10000` (or `http://$(boot2docker ip):10000` if
-you are on OSX).
+The setup of `nginx` is part of this repository, nor is the configuration
+of correct certificates.
