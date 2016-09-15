@@ -26,9 +26,8 @@ available under `http://localhost:8000`.
 
 # Deploying
 
-The website is deployed as a static website behind nginx.
-To deploy a new version you run either `./deploy.sh stage` or `./deploy.sh prod`,
-depending on which version of the website you want to update.
+The website is automatically (periodically) updated from the `master` branch.
+There is no need to manually deploy anything.
 
-The setup of `nginx` is not part of this repository, nor is the configuration
-of correct certificates.
+As there is no stage environment, please check the changes locally with the `./run.sh`
+script before merging.
