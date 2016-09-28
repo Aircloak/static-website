@@ -428,10 +428,14 @@ html[lang="de"] #en {
 	display: none;
 }
 
-.link:before{
+a.link:before{
 	content: '>';
 	color: inherit;
 	padding-right: 5px;
+}
+
+a.url {
+	border-bottom: 1px dotted #ccc;
 }
 
 a:hover {
