@@ -330,7 +330,6 @@ footer .sponsors img {
 .badge:hover {
 	-webkit-transform:scale(1.1);
 	transform:scale(1.1);
-	
 }
 
 /* bxslider */
@@ -623,7 +622,7 @@ a.twitter_fav_icon:before {
 	.sponsors .col-20 {
 		margin: 0;
 	}
-	
+		
 	.button_full {
 		margin-bottom: 20px;
 	}
