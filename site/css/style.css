@@ -343,6 +343,38 @@ footer .sponsors img {
 	padding: 20px 0 !important;
 }
 
+.bx-wrapper .bx-prev {
+	left: -80px;
+	background: url(img/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: -80px;
+	background: url(img/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
 .news-slider p {
 	margin-bottom: 0;
 }
@@ -422,36 +454,24 @@ footer .sponsors img {
 
 /* twitter */
 
-iframe#twitter-widget-0 {
-	width: 100%;
-	height: 274px;
-}
-
-.twitter {
-
-}
-
 #feed {
 	padding-bottom: 20px;
-}
-
-#feed ul {
-
 }
 
 #feed li {
 	float: left;
 	width: 25%;
-	padding: 0 5px;
+	padding-right: 10px;
+}
+
+#feed li:last-child {
+	padding-right:0;
 }
 
 #feed li > span {
 	display: inline-block;
 	background: white;
-}
-
-#feed .inner {
-	padding: 10px;
+	padding:10px 10px 0 10px;
 }
 
 #feed p.tweet {
