@@ -91,11 +91,8 @@ nav a:hover {
 	}
 }
 
-#home #home, 
-#system #system, 
-#transparency #transparency, 
-#team #team, 
-#use-cases #use-cases {
+#home #home,
+nav .active {
 	color: #1cb7db;
 }
 
@@ -194,7 +191,8 @@ a.link:before{
 }
 
 #home .header_img,
-#team .header_img {
+#team .header_img,
+#jobs .header_img {
 	height: 300px;
 }
 
