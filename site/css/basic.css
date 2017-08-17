@@ -466,7 +466,7 @@ ul.lined-list {
 }
 
 .bullets li:before,
-.bullets:before {
+.-bullets:before {
 	content: '•';
 	color: inherit;
 	padding-right: 5px;

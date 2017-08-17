@@ -176,6 +176,11 @@ a:hover {
 	margin-left: -13px;
 }
 
+a.link:before{
+	color: #1cb7db;
+	font-weight:400;
+}
+
 #data-engine .bullet-list li {
 	margin-bottom: 5px;
 }
@@ -290,6 +295,15 @@ a:hover.download, .download a:hover {
 
 .team-members h5 {
 	margin: 10px 0 0 0;
+}
+
+.job-offers .bullet-list li,
+.job-offers h4 {
+	margin-bottom:5px;
+}
+
+.job-offers h4 {
+	color: #1cb7db;
 }
 
 footer.bg-grey .container {
