@@ -6,6 +6,14 @@ $(document).ready(function() {
 		$("nav > ul").slideToggle("600");
 		$(".nav_responsive").toggleClass("close_menu");
 	});
+	
+	/* nav active link */
+	var pgurl = window.location.href.substr(window.location.href
+	.lastIndexOf("/")+1);
+	     $("nav a").each(function(){
+	          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+	          $(this).addClass("active");
+	})
 
 	// Scrolling Anker-Link 
 	// Reminder for Dummies: Link <a href="#services">Jump to services</a> / Anker <div id="services"></div>
@@ -17,7 +25,7 @@ $(document).ready(function() {
 			$target = $(target);
 
 		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
+			'scrollTop': $target.offset().top -120
 		}, 900, 'swing', function() {
 			window.location.hash = target;
 		});
