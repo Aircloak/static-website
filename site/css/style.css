@@ -332,11 +332,10 @@ footer .sponsors img {
 .badge {
 	display: inline-block;
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	right: 40px;
-	width: 280px;
+	z-index:9999;
+	top: -285px;
+	right: 0;
+	width: 300px;
 }
 
 .badge:hover {
@@ -458,6 +457,10 @@ footer .sponsors img {
 	color: #fff;
 	border-left: 0;
 	cursor: pointer;
+}
+
+.challenge .button {
+	background:#78B624;
 }
 
 .form .button:hover {
@@ -664,11 +667,12 @@ a.twitter_fav_icon:before {
 @media only screen and (max-width: 480px) {
 
 	.badge {
-	/*
+	position:relative !important;
+	top:0;
 	right: 0;
 	left: 0;
-	*/
-	display: none;
+	margin:0 auto;
+	/*display: none;*/
 	}
 
 	h1, h2, h3 {
