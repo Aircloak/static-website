@@ -268,25 +268,30 @@ img.mobile {
 	display: none;
 }
 
-a.download, .download a {
-	display: inline-block;
-	font-size: 19px;
-	color: #777;
-	padding-left: 40px;
-	background: url(img/bt_download_0.png) no-repeat 0 top;
-	background-size: 28px;
+a.bt-download,a.bt-link {
+	display:inline-block;
+	font-size:19px;
+	color:#333;
+	padding-bottom:10px;
+	opacity:0.75;
 }
 
-a:hover.download, .download a:hover {
-	color: #333;
-	background: url(img/bt_download_1.png) no-repeat 0 top;
-	background-size: 28px;
-	text-decoration: underline !important;
+a.bt-download::before,a.bt-link::before {
+	display:inline-block;
+	padding:4px 12px 0 0;
+	vertical-align:middle;
 }
 
-.download p {
-	font-size: 13px;
-	padding-left: 40px;
+a.bt-download::before {
+	content:url("img/bt-download.svg");
+}
+
+a.bt-link::before {
+	content:url("img/bt-link.svg");
+}
+
+a.bt-download:hover,a.bt-link:hover {
+	opacity:1;
 }
 
 .team-members h5 {
