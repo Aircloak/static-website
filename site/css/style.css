@@ -479,6 +479,12 @@ table.col-as-header td:first-child {
   font-weight: bold;
 }
 
+/* custom list styles for Aircloak Challenge rules page */
+
+ul.incremental li {
+  list-style: circle;
+}
+
 /* twitter */
 
 #feed {
