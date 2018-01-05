@@ -62,6 +62,14 @@ nav a:hover {
 
 @media (min-width: 960px) {
 
+  .ease-left {
+    margin-left: -200px;
+  }
+
+  .ease-right {
+    margin-right: -200px;
+  }
+
 	nav > ul {
 		display: block !important;
 	}
