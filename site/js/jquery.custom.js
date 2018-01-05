@@ -30,7 +30,7 @@ $(document).ready(function() {
 			window.location.hash = target;
 		});
 	});
-	
+
 	// bxslider ref-slider
 
 	if (window.matchMedia('(min-width: 500px)').matches) {
