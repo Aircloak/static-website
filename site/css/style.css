@@ -61,15 +61,6 @@ nav a:hover {
 }
 
 @media (min-width: 960px) {
-
-  .ease-left {
-    margin-left: -200px;
-  }
-
-  .ease-right {
-    margin-right: -200px;
-  }
-
 	nav > ul {
 		display: block !important;
 	}
@@ -599,6 +590,43 @@ a.twitter_retweet_icon:before {
 
 a.twitter_fav_icon:before {
 	content: '\f004';
+}
+
+/* ----- Features page video sizing ----- */
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 102%;
+  margin-left: -1%;
+  margin-top: -1%;
+}
+
+.video-ways-to-query {
+  padding-bottom: 66.67%;
+}
+
+.video-tableau {
+  padding-bottom: 68.33%;
+}
+
+@media only screen and (min-width: 1400px) {
+  .video-ways-to-query {
+    width: 720px;
+    height: 480px;
+    margin-left: -200px;
+  }
+
+  .ease-right {
+    margin-right: -200px;
+  }
 }
 
 
