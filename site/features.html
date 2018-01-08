@@ -93,11 +93,17 @@ $(document).ready(function() {
               <h2>Anonymization tailored to the query</h2>
 
               <p class="large">
-                Aircloak Insights' anonymization is tailored to the given query and the data it accesses. It detects when values are identifying and when they are not. Contrast this with traditional ahead-of–time anonymization where everything that is personally identifying, or potentially could be, has to be removed.
+                Aircloak Insights' anonymization is tailored to the given query and the data it accesses.
+                By detecting per-query which values might be identifying, Aircloak maximizes data accuracy
+                while strongly protecting individuals.  Contrast this with traditional ahead-of–time anonymization
+                which greatly distorts data in order to protect against every possible future query.
               </p>
 
               <p class="large">
-                With Aircloak you have the ability to slice and dice your data based on text based columns, run queries that inspect social security numbers, bank account details, medical history, email addresses, names and addresses, all without ever running the risk of exposing data about an individual.
+                With Aircloak you can slice and dice your data any way you wish.
+                You can even safely parse text fields that contain personally identifying information
+                like email addresses or credit card numbers. Aircloak detects when a query requests
+                too much detail, and anonymizes accordingly.
               </p>
             </div>
             <div class="col-60 text-center">
