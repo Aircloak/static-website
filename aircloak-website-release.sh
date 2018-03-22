@@ -13,4 +13,4 @@ ssh root@acwww1.mpi-sws.org "tar xvf wordpress${timestamp}.tar.xz -C / && ( shre
 stagepw=$(ssh root@acwww0.mpi-sws.org "grep DB_PASSWORD /var/www/wordpress/stage/wp-config.php | sed \"s/^.*', '\(.*\)');.*$/\1/\"")
 prodpw=$(ssh root@acwww0.mpi-sws.org "grep DB_PASSWORD /var/www/wordpress/prod/wp-config.php | sed \"s/^.*', '\(.*\)');.*$/\1/\"")
 
-ssh root@acwww0.mpi-sws.org "mysqldump -h acmysql0.mpi-sws.org -u wordpress_stage wordpress_stage -p${stagepw} | sed 's/new-website-stage.aircloak.com/aircloak.com/g' | mysql -h acmysql0.mpi-sws.org -u wordpress_prod wordpress_prod -p${prodpw}"
+ssh root@acwww0.mpi-sws.org "mysqldump -h acmysql0.mpi-sws.org -u wordpress_stage wordpress_stage -p${stagepw} | sed 's/www-stage.aircloak.com/aircloak.com/g' | mysql -h acmysql0.mpi-sws.org -u wordpress_prod wordpress_prod -p${prodpw}"
